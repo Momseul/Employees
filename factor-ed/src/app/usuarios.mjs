@@ -5,31 +5,31 @@ const prisma = new PrismaClient()
 async function main() {
   const result = await prisma.employee.create({
     data: {
-      name: 'Juan Alcachofa',
-      email: 'user@factored.ai',
+      name: 'Rodolfo Páez',
+      email: 'fito@factored.ai',
       password: 'mypassword',
       avatar: 'placeholder.jpg',
-      position: 'developer',
+      position: 'Tech Lead ',
       skills: {
         create: [
           {
             skillName: 'Python',
-            skillGrade: '80',
+            skillGrade: '10',
           },
           {
             skillName: 'Cobol',
             skillGrade: '100',
           },
           {
-            skillName: 'Spark',
-            skillGrade: '60',
+            skillName: 'Docker',
+            skillGrade: '40',
           },
           {
             skillName: 'Java',
-            skillGrade: '30',
+            skillGrade: '60',
           },
           {
-            skillName: 'TypeScript',
+            skillName: 'Haskell',
             skillGrade: '100',
           },
         ],
@@ -39,20 +39,20 @@ async function main() {
 
   const asdd = await prisma.employee.create({
     data: {
-      name: 'Juana Alcachofa',
-      email: 'myssuskkkker@factored.ai',
+      name: 'Andrés Calamaro',
+      email: 'calamaro@factored.ai',
       password: 'mypassword',
       avatar: 'placeholder.jpg',
-      position: 'developer',
+      position: 'Software Architect',
       skills: {
         create: [
           {
-            skillName: 'Python',
-            skillGrade: '80',
+            skillName: 'Rust',
+            skillGrade: '100',
           },
           {
-            skillName: 'Cobol',
-            skillGrade: '100',
+            skillName: 'Python',
+            skillGrade: '90',
           },
           {
             skillName: 'Spark',
@@ -73,28 +73,28 @@ async function main() {
 
   const resuhhhlt = await prisma.employee.create({
     data: {
-      name: 'Lian Alcachofa',
-      email: 'maayuser@factored.ai',
+      name: 'Denise Gutiérrez',
+      email: 'denise@factored.ai',
       password: 'mypassword',
       avatar: 'placeholder.jpg',
-      position: 'developer',
+      position: 'UX Designer',
       skills: {
         create: [
           {
             skillName: 'Python',
-            skillGrade: '80',
+            skillGrade: '40',
           },
           {
             skillName: 'Cobol',
+            skillGrade: '70',
+          },
+          {
+            skillName: 'CSS',
             skillGrade: '100',
           },
           {
-            skillName: 'Spark',
-            skillGrade: '60',
-          },
-          {
-            skillName: 'Java',
-            skillGrade: '30',
+            skillName: 'React',
+            skillGrade: '100',
           },
           {
             skillName: 'TypeScript',
@@ -105,7 +105,7 @@ async function main() {
     },
   })
 
-  const ccc = await prisma.employee.create({
+  /* const ccc = await prisma.employee.create({
     data: {
       name: 'Homero Cae',
       email: 'myusssdfcser@factored.ai',
@@ -340,13 +340,13 @@ async function main() {
         ],
       },
     },
-  })
+  }) */
 
-const users = await prisma.employee.findMany()
+/* const users = await prisma.employee.findMany()
 const habilidades = await prisma.skill.findMany()
 
 console.log(users)
-console.log(habilidades) 
+console.log(habilidades)  */
 
 /* const deletePosts = prisma.employee.deleteMany()
 const deleteUsers = prisma.skill.deleteMany()
